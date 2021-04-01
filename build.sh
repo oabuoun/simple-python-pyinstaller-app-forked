@@ -1,3 +1,2 @@
-source .venv/bin/activate
-pip3 freeze -l > requirements.txt
+pip3 install -r requirements.txt
 python -m py_compile sources/add2vals.py sources/calc.py
