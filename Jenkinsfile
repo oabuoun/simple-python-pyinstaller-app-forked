@@ -55,6 +55,7 @@ pipeline {
                         dockerImage.push()
                     }
                 }
+            }
         }
         
         stage('Remove Unused docker image') {
@@ -62,7 +63,7 @@ pipeline {
                 sh "docker rmi $registry:$BUILD_NUMBER"
             }
         }
-        
+
         stage('Deliver') {
             agent any
             environment {
