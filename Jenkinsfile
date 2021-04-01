@@ -40,6 +40,16 @@ pipeline {
             }
         }
 
+        /*stage('Cloning our Git') { 
+10
+            steps { 
+11
+                git 'https://github.com/YourGithubAccount/YourGithubRepository.git' 
+12
+            }
+13
+        } */
+
         stage('Build-Image') {
             steps{
                 script {
